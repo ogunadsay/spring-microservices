@@ -7,8 +7,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import lombok.Getter;
 
 @Entity
+@Getter
 public class Tour {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
